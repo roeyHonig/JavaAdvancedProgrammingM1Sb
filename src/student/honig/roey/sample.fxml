@@ -1,0 +1,26 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.honig.roey.Controller">
+    <top>
+        <Label text="Top Section" />
+    </top>
+    <left>
+        <Button text="Left Button" />
+    </left>
+    <center>
+        <Label text="Center Content" />
+    </center>
+    <right>
+        <Button text="Right Button" />
+    </right>
+    <bottom>
+        <Label text="Bottom Section" />
+    </bottom>
+</BorderPane>
