@@ -17,13 +17,13 @@
         </ToolBar>
     </top>
     <left>
-        <Region prefWidth="20" style="-fx-background-color: lightyellow;"/>
+        <Region prefWidth="0" style="-fx-background-color: lightyellow;"/>
     </left>
     <center>
         <Canvas fx:id="drawShapesCanvas" width="600" height="600"></Canvas>
     </center>
     <right>
-        <Region prefWidth="20" style="-fx-background-color: lightyellow;"/>
+        <Region prefWidth="0" style="-fx-background-color: lightyellow;"/>
     </right>
     <bottom>
         <Region prefHeight="0" style="-fx-background-color: lightyellow;"/>
