@@ -10,8 +10,8 @@ public class DrawShapes extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        Parent root = FXMLLoader.load(getClass().getResource("drawShapes.fxml"));
+        primaryStage.setTitle("Draw Shapes");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

@@ -37,8 +37,8 @@ public class DrawShapesController {
     private void drawARandomRectangle(GraphicsContext gc, double canvasWidth, double canvasHeight) {
         double rectWidth = getRandomNumberInRange(1, canvasWidth / 4);
         double rectHeight = getRandomNumberInRange(1, canvasHeight / 4);
-        double x = getRandomNumberInRange(0, canvasWidth);
-        double y = getRandomNumberInRange(0, canvasHeight);
+        double x = getRandomNumberInRange(0, canvasWidth-rectWidth);
+        double y = getRandomNumberInRange(0, canvasHeight-rectHeight);
         Color randomColor = getRandomColor();
         gc.setFill(randomColor);
         gc.fillRect(x, y, rectWidth, rectHeight);
@@ -47,8 +47,8 @@ public class DrawShapesController {
     private void drawARandomElipse(GraphicsContext gc, double canvasWidth, double canvasHeight) {
         double elipWidth = getRandomNumberInRange(1, canvasWidth / 4);
         double elipHeight = getRandomNumberInRange(1, canvasHeight / 4);
-        double x = getRandomNumberInRange(0, canvasWidth);
-        double y = getRandomNumberInRange(0, canvasHeight);
+        double x = getRandomNumberInRange(0, canvasWidth-elipWidth);
+        double y = getRandomNumberInRange(0, canvasHeight-elipHeight);
         Color randomColor = getRandomColor();
         gc.setFill(randomColor);
         gc.fillOval(x, y, elipWidth, elipHeight);
@@ -57,8 +57,8 @@ public class DrawShapesController {
     private void drawARandomLine(GraphicsContext gc, double canvasWidth, double canvasHeight) {
         double lineBoxWidth = getRandomNumberInRange(1, canvasWidth / 4);
         double lineBoxHeight = getRandomNumberInRange(1, canvasHeight / 4);
-        double x = getRandomNumberInRange(0, canvasWidth);
-        double y = getRandomNumberInRange(0, canvasHeight);
+        double x = getRandomNumberInRange(0, canvasWidth-lineBoxWidth);
+        double y = getRandomNumberInRange(0, canvasHeight-lineBoxHeight);
         Color randomColor = getRandomColor();
         gc.setStroke(randomColor);
         gc.strokeLine(x, y, (x+lineBoxWidth), (y+lineBoxHeight));
@@ -67,9 +67,9 @@ public class DrawShapesController {
     private Color getRandomColor() {
         Random rand = new Random();
         double r = rand.nextDouble();  // Random value between 0.0 and 1.0
-        double g = rand.nextDouble();  // Random value between 0.0 and 1.0
-        double b = rand.nextDouble();  // Random value between 0.0 and 1.0
-        return new Color(r, g, b, 1.0);  // Create color using random RGB values
+        double g = rand.nextDouble();
+        double b = rand.nextDouble();
+        return new Color(r, g, b, 1.0);
     }
 
     private double getRandomNumberInRange(double min, double max) {
@@ -79,7 +79,7 @@ public class DrawShapesController {
 
     private int getRandomIntInRange(int min, int max) {
         Random rand = new Random();
-        return rand.nextInt((max - min) + 1) + min;  // Generate int in the range [min, max]
+        return rand.nextInt((max - min) + 1) + min;
     }
 
 }
