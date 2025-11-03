@@ -13,7 +13,7 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.honig.roey.DrawShapesController">
     <top>
         <ToolBar>
-            <Button text="Draw Shapes" />
+            <Button fx:id="drawShapesButton" text="Draw Shapes" onAction="#drawShapesButtonPressed"/>
         </ToolBar>
     </top>
     <left>
