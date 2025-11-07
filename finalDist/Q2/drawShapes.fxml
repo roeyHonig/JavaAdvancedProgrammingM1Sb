@@ -3,7 +3,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.canvas.Canvas?>
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.honig.roey.DrawShapesController">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="DrawShapesController">
     <top>
         <ToolBar>
             <Button fx:id="drawShapesButton" text="Draw Shapes" onAction="#drawShapesButtonPressed"/>
